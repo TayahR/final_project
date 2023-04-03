@@ -1,0 +1,94 @@
+/* 
+Colors
+Spanish Violet #482683
+
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+}
+
+/* HEADER*/
+.global-header {
+    display: flex;
+    align-items: center;
+}
+
+.sal-corp-logo {
+   height: 6rem;
+   display: flex;
+   align-items: center;
+}
+
+
+
+.nav-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    
+}
+ul {
+    list-style: none;
+}
+.nav li {
+    font-size: 14px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+
+h1 {
+   color: white;
+    background-color: #482683; 
+    min-height: 3rem;
+    padding: 1.75rem;
+}
+.available-positionsx3-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    background-color: #4AABBC;
+    padding: 20px;
+}
+
+/*.available-positions-image2{
+    background-image: url(http://www.salcorp-hr.com.au/wp-content/uploads/2023/02/HepburnLogo696x376.jpg);
+    background-size: contain;
+    width: 400px;
+    height: 200px;
+    border: 2px solid;
+    color: pink;
+    resize: both;
+    overflow: scroll;
+}
+*/
+
+.available-positions-image-1 {
+    size: 25%;
+}
+
+.available-positions-indiv-item {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 480px) {
+.available-positions-indiv-item {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
+
+
+.available-positions-indiv-item {
+    background-color: white;
+}
+
+/*.available-positions-indiv-image-container {
+    width: 200px;
+    height: 140px;
+    object-fit: contain;
+}*/
