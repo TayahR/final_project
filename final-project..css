@@ -1,0 +1,388 @@
+/* Colors-
+
+ Spanish Violet #482683
+ Teal #4AABBC
+ * Green: #14a96d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+  
+  .salcorp-hp-container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  
+  .salcorp-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    height: 60px;
+  }
+  
+
+  .salcorp-header-image,
+  .salcorp-header-link {
+    display: block;
+  }
+  
+  .salcorp-header-container a,
+  .salcorp-header-container a:hover,
+  .salcorp-header-container a:active,
+  .salcorp-header-container a:visited {
+    color: #66727c;
+    text-decoration: none;
+  }
+  
+  .salcorp-header-image {
+    height: 55px;
+    margin-right: 25px;
+  }
+  
+  .salcorp-header-link {
+    padding: 0 10px;
+    display: none;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-header-link {
+      display: block;
+    }
+  }
+  
+  .salcorp-header-left,
+  .salcorp-header-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .salcorp-header-right-mobile {
+    display: block;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-header-right-mobile {
+      display: none;
+    }
+  }
+  
+  .salcorp-header-right-mobile img {
+    margin: 13px 15px 13px 0;
+    padding: 9px 10px;
+    border: 1px solid #cfd7de;
+    border-radius: 4px;
+    color: #14a96d;
+  }
+  
+  /* Hero Container */
+  
+  .salcorp-hero-container {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-hero-container {
+      background-image: url('assets/img/kobu-agency-7okkFhxrxNw-unsplash.jpg');
+      background-size: cover;
+      height: 500px;
+    }
+}
+    
+   /* Tried to play around with darkening the image to get the text to pop out but didn't look better
+   .image-mask-darken {
+        position: relative;
+    }
+
+    .image-mask-darken:before {
+        position: absolute;
+        background-color: rgba(0,0,0,0.4);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        content: "";
+    }
+  }*/
+  
+  .salcorp-hero-title {
+    color: #482683;
+    background-color: #cfd7de;
+    display: none;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-hero-title {
+      display: inherit;
+      font-size: 40px;
+      margin: 0 0 10px 15px;
+    }
+  }
+  
+  .salcorp-hero-container p {
+    color: black;
+    text-align: center;
+    background-color: #cce9ee;
+    opacity: 60%;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0 15px 25px 15px;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-hero-container p {
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+  
+  .salcorp-button {
+    background-color:#482683;
+    border: 1px solid #482683;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    transition: 1s ease-in-out;
+    margin: 0 15px;
+    width: calc(100% - 60px);
+    text-decoration: none;
+    color: white;
+  }
+  
+  .salcorp-button:hover {
+    background-color: #9bf3d0;
+    color: black;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-button {
+      width: 250px;
+    }
+  }
+  
+  .salcorp-cta {
+    display: none;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-cta {
+      display: block;
+    }
+  }
+  
+  .salcorp-cta-mobile {
+    display: block;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-cta-mobile {
+      display: none;
+    }
+  }
+  
+  /* Mobile hero */
+  .salcorp-mobile-hero-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+  
+  .salcorp-mobile-hero {
+    min-width: 0;
+    max-width: 100%;
+  }
+  
+  /* Swap out desktop and mobile heros */
+  @media (min-width: 800px) {
+    .salcorp-mobile-hero-container {
+      display: none;
+    }
+  }
+  
+  /* Positions Container */
+  
+  .salcorp-middle-section h2 {
+    text-align: center;
+  }
+  
+  
+  .salcorp-positions-container {
+    background-color:#482683;
+    padding: 10px;
+  }
+
+
+  .salcorp-position-indiv {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  .salcorp-position-indiv img {
+    width: 180px;
+    margin-right: 18px;
+  }
+  
+  .salcorp-cta-box {
+    padding: 0 15px;
+  }
+  
+  .salcorp-cta-container {
+    border: 1px solid #cfd7de;
+  }
+  
+  .salcorp-cta-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f5f6;
+    border-bottom: 1px solid #cfd7de;
+  }
+  
+  .salcorp-cta-header img {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+  
+  .salcorp-cta-header p {
+    margin: 0;
+  }
+  
+  .salcorp-cta-bottom-container {
+    padding: 20px;
+  }
+  
+  
+  .salcorp-cta {
+    margin-top: 20px;
+    border-radius: 2px;
+    background-color: #482683;
+    padding: 8px 15px;
+    color: #fff;
+    text-align: center;
+  }
+  
+    
+  /* 1-2-3 section */
+  .salcorp-123-item-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 0px 30px 30px;
+  
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-123-item-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 30px;
+      margin: 50px 0px 30px 30px;
+    }
+  }
+  
+  .salcorp-123-container-title {
+    padding: 0 25px;
+    text-align: center;
+  }
+  
+  .salcorp-123-item {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px 0px;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-123-item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  
+  .salcorp-123-item img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-123-item img {
+      max-height: 70px;
+      max-width: 70px;
+      margin-right: 0;
+    }
+  }
+  
+  .salcorp-123-item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px 20px;
+  }
+  
+  @media (min-width: 800px) {
+    .salcorp-123-item-content {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+  
+  .salcorp-123-item-content p {
+    color: #66727c;
+    line-height: 25px;
+  }
+
+  .salcorp-call-to-action {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  .salcorp-button-bottom {
+    margin-top: 20px;
+    background-color: #482683;
+    padding: 8px 15px;
+    text-align: center;
+    border: 1px solid #482683;
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+    transition: 1s ease-in-out;
+    margin: 0 15px;
+    width: calc(100% - 60px);
+    text-decoration: none;
+   
+  }
+  
+  
+  
