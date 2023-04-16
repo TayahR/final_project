@@ -2,6 +2,8 @@
 
  Spanish Violet #482683
  Teal #4AABBC
+ light blue #cce9ee
+
  * Green: #14a96d
  * White: #fff
  * Light gray: #f4f5f6
@@ -37,7 +39,6 @@ body {
     height: 60px;
   }
   
-
   .salcorp-header-image,
   .salcorp-header-link {
     display: block;
@@ -94,7 +95,7 @@ body {
   /* Hero Container */
   
   .salcorp-hero-container {
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,6 +202,7 @@ body {
     }
   }
   
+
   /* Mobile hero */
   .salcorp-mobile-hero-container {
     display: grid;
@@ -221,9 +223,10 @@ body {
     }
   }
   
-  /* Positions Container */
+  /* FEATURED Positions Container */
   
-  .salcorp-middle-section h2 {
+  .salcorp-middle-section h2,
+  .salcorp-available-positions-search h2 {
     text-align: center;
   }
   
@@ -246,47 +249,27 @@ body {
     margin-left: 3px
   }
   
-  .salcorp-cta-box {
-    padding: 0 15px;
-  }
-  
-  .salcorp-cta-container {
-    border: 1px solid #cfd7de;
-  }
-  
-  .salcorp-cta-header {
+
+  /* SEARCH BOX - where the JS does it's thing */
+  .salcorp-search {
+    padding: 15px 5px;
+    border: 2px solid #482683;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f5f6;
-    border-bottom: 1px solid #cfd7de;
   }
-  
-  .salcorp-cta-header img {
-    width: 28px;
-    height: 28px;
-    margin-right: 10px;
+
+  ul {
+    line-height: 2em;
+    margin: 4px 0 15px;
+    padding: 0;  
   }
-  
-  .salcorp-cta-header p {
-    margin: 0;
+
+  .position{
+        border:#482683;
   }
+
   
-  .salcorp-cta-bottom-container {
-    padding: 20px;
-  }
-  
-  
-  .salcorp-cta {
-    margin-top: 20px;
-    border-radius: 2px;
-    background-color: #482683;
-    padding: 8px 15px;
-    color: #fff;
-    text-align: center;
-  }
-  
+
     
   /* 1-2-3 section */
   .salcorp-123-item-container {
@@ -363,6 +346,48 @@ body {
     line-height: 25px;
   }
 
+/* CTA BUTTONS */
+.salcorp-cta-box {
+  padding: 0 15px;
+}
+
+.salcorp-cta-container {
+  border: 1px solid #cfd7de;
+}
+
+.salcorp-cta-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f5f6;
+  border-bottom: 1px solid #cfd7de;
+}
+
+.salcorp-cta-header img {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.salcorp-cta-header p {
+  margin: 0;
+}
+
+.salcorp-cta-bottom-container {
+  padding: 20px;
+}
+
+.salcorp-cta {
+  margin-top: 20px;
+  border-radius: 2px;
+  background-color: #482683;
+  padding: 8px 15px;
+  color: #fff;
+  text-align: center;
+}
+
+
   .salcorp-call-to-action {
     display: flex;
     justify-content: space-evenly;
@@ -394,10 +419,82 @@ body {
         transition: 1s ease-in-out;
         margin: 0 15px;
         width: calc(100% - 60px);
-        
-       
+
     }
   }
   
+  /* SIDE MENU - width under 800px*/
+   
+   .side-menu-position {
+    padding-top: 25px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
   
+  .side-menu-design {
+    background-color: #cce9ee;
+    background-size: 1000px 800px;
+    background-repeat: repeat;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 0.4s ease-in-out;
+  }
+
+  .show-menu {
+    opacity: 1;
+    transform: translateX(0%);
+  }
   
+   .side-menu-header {
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 25px 25px;  
+  }
+  
+  .side-menu-content {
+    color: #482683;
+    font-size: 24px; 
+    margin: 25px;
+    padding-left: 0; 
+  }
+  
+  .side-menu-content li {
+    list-style: none;
+    margin-bottom: 25px;
+  }
+  
+  .side-menu-workspace {
+    margin-bottom: 8px;
+  }
+  
+  .side-menu-button {
+    background-color: #482683;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    transition: 1s ease-in-out;
+    margin: 0 14px
+  }
+
+  .side-menu-button:hover {
+    background-color: #9bf3d0;
+    color: black;
+  }
+  
+  /* Sticks the nav to the top of the page */
+  #top-nav {
+    position: fixed;
+  }
+
+  /* footer */
+  .salcorp-footer {
+    padding: 15px;
+    color:#482683;
+  }

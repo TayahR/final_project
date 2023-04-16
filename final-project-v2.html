@@ -15,7 +15,7 @@
 
     <!--Header-->
     <header class="salcorp-header-container">
-      <section class="salcorp-header-left" id="side-menu">
+      <section class="salcorp-header-left">
         <img class="salcorp-header-image " src="https://www.salcorp-hr.com.au/wp-content/uploads/2019/01/salcorp-logo-transparent.png" alt="Sal Corp logo">
         <a class="salcorp-header-link" href="#">About Us</a>
         <a class="salcorp-header-link" href="#">Postions Available</a>
@@ -25,29 +25,57 @@
         <a class="salcorp-header-link" href="#">Enployer Sign In </a>
         <a class="salcorp-header-link" href="#">Applicant Sign In</a>
         <a class="salcorp-header-link" href="#">Contact Us</a>
+        <!-- <div class="hamburger-menu" id="menu-trigger">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon">
+        </div> -->
       </section>
-      <section class="salcorp-header-right-mobile">
+      <section class="salcorp-header-right-mobile hamburger-menu" id="menu-trigger">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="hamburger-icon">
       </section>
     </header>
+
+    <!-- side menu in here-->
+   
+      <aside class="side-menu-position side-menu-design show-menu" id="side-menu">
+      <header class="side-menu-header">
+         <img class="salcorp-header-image " src="https://www.salcorp-hr.com.au/wp-content/uploads/2019/01/salcorp-logo-transparent.png" alt="Sal Corp logo">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/x.svg" alt="Close this menu" id="menu-close">
+      </header>
+        <ul class="side-menu-content">
+          <li>About Us</li>
+          <li>Positions Available</li>
+          <li>Our Services</li>
+          <li>Contact Us</li>
+          <li class="side-menu-button">Sign In</li>
+        </ul>
+    </aside>
+  
 
     <!--Hero Container-->
     <section class="salcorp-hero-container image-mask-darken">
       <!--<h1 class="salcorp-header-bar">Recruitment, Investigations, Workplace Relations and HRM Where quality and independence Counts!</h1>-->
       <h1 class="salcorp-hero-title">Recruitment, Investigations, Workplace Relations and HRM Consultants</h1>
       <p>Executive Recruitment that is responsive and adaptive!</p>
+       
+      <!-- BUTTONS - DELETE?? -->
       <div class="salcorp-button salcorp-cta">Search Available Positions</div>
       <div class="salcorp-button salcorp-cta-mobile">Search Positions</div>
-        
+       
     <!-- link JS here to SEARCH BUTTON -->
-      <form action="" id="searchForm">
+      <!-- <form action="" id="searchForm">
         <label for="search"></label>
         <label type="text" id="search" name="search"></label>
       </form>
-    
-    
-   
+      
+      from d17 omdb exercise 
+      <form class="position-search" id="searchForm">
+        <input class="search-term" name="search-term" type="text" placeholder="Search for a movie">
+       
+      </form> -->
+  
     </section>
+    <!-- SEARCH FUNCTION - FOR JS -->
+    
 
     <!-- Positions Container-->
     <section class="salcorp-middle-section">
@@ -82,6 +110,26 @@
         </section>
      </section>  
 
+    <!-- SEARCH POSITIONS -->
+     <Section class="salcorp-available-positions-search">
+      <h2> Available Positions</h2>
+        <div>
+          <form >
+          <input class="salcorp-search" id ="searchbar" onkeyup="search_position()" searchtype="text" name="search" placeholder="Search available positions">
+          </form>
+        </div>
+      <ul class="positions-list" id='list'>
+        <li class="position">Manager Libraries - Moorabool Shire Council</li>
+        <li class="position">Director Corporate Services - Brimbank Council</li>
+        <li class="position">Manager Arts and Culture - City of Kingston</li>
+        <li class="position">Human Resources Manager - Buloke Shire Council</li>
+        <li class="position">Coordinator Statutory Planning</li>
+        <li class="position">Administration Officer - Hepburn Shire Council</li>
+        <li class="position">Coordinator Major Projects - City of Bendigo</li>
+        <li class="position">Manager Customer Services - City of Moonee Valley</li>
+      </ul>
+    </Section>
+   
     <!--Salcorp 1-2-3-->
     <section class="salcorp-123-container">
       <h2 class="salcorp-123-container-title">We’re the experts in helping you find the right person to join your team</h2>
@@ -115,6 +163,11 @@
         </div>
         <div class="salcorp-button-bottom"><a href="https//www.linkedin.com/in/christine-mileham/">Connect on LinkedIn</a></div>
     </section> 
+
+    <footer class="salcorp-footer">
+      <hr>
+      <p>Sal Corp Pty Ltd</p>
+    </footer>
 
   </main>
   <script defer src="final-project-v2.js"></script>
