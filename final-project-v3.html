@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Salcorp Revamp </title>
+  <meta name="description" content="Final project - Sal Corp Site">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="final-project-v3.css">
+</head>
+
+<body>
+  <main class="salcorp-hp-container">
+
+    <!--Header-->
+    <header class="salcorp-header-container">
+      <section class="salcorp-header-left">
+        <img class="salcorp-header-image " src="https://www.salcorp-hr.com.au/wp-content/uploads/2019/01/salcorp-logo-transparent.png" alt="Sal Corp logo">
+        <a class="salcorp-header-link" href="#">About Us</a>
+        <a class="salcorp-header-link" href="#">Postions Available</a>
+        <a class="salcorp-header-link" href="#">Our Services</a>
+      </section>
+      <section class="salcorp-header-right">
+        <a class="salcorp-header-link" href="#">Enployer Sign In </a>
+        <a class="salcorp-header-link" href="#">Applicant Sign In</a>
+        <a class="salcorp-header-link" href="#">Contact Us</a>
+        <!-- <div class="hamburger-menu" id="menu-trigger">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon">
+        </div> -->
+      </section>
+      <section class="salcorp-header-right-mobile hamburger-menu" id="menu-trigger">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="hamburger-icon">
+      </section>
+    </header>
+
+    <!-- side menu in here-->
+   
+      <aside class="side-menu-position side-menu-design show-menu" id="side-menu">
+      <header class="side-menu-header">
+         <img class="salcorp-header-image " src="https://www.salcorp-hr.com.au/wp-content/uploads/2019/01/salcorp-logo-transparent.png" alt="Sal Corp logo">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/x.svg" alt="Close this menu" id="menu-close">
+      </header>
+        <ul class="side-menu-content">
+          <li>About Us</li>
+          <li>Positions Available</li>
+          <li>Our Services</li>
+          <li>Contact Us</li>
+          <li class="side-menu-button">Sign In</li>
+        </ul>
+    </aside>
+  
+
+    <!--Hero Container-->
+    <section class="salcorp-hero-container image-mask-darken">
+      <!--<h1 class="salcorp-header-bar">Recruitment, Investigations, Workplace Relations and HRM Where quality and independence Counts!</h1>-->
+      <h1 class="salcorp-hero-title">Recruitment, Investigations, Workplace Relations and HRM Consultants</h1>
+      <p>Executive Recruitment that is responsive and adaptive!</p>
+       
+      <!-- BUTTONS - DELETE?? -->
+      <div class="salcorp-button salcorp-cta">Search Available Positions</div>
+      <div class="salcorp-button salcorp-cta-mobile">Search Positions</div>
+       
+    <!-- link JS here to SEARCH BUTTON -->
+      <!-- <form action="" id="searchForm">
+        <label for="search"></label>
+        <label type="text" id="search" name="search"></label>
+      </form>
+      
+      from d17 omdb exercise 
+      <form class="position-search" id="searchForm">
+        <input class="search-term" name="search-term" type="text" placeholder="Search for a movie">
+       
+      </form> -->
+  
+    </section>
+    <!-- SEARCH FUNCTION - FOR JS -->
+    
+
+    <!-- Positions Container-->
+    <section class="salcorp-middle-section">
+      <h2>Featured Positions - Available Now</h2>
+      <div class="salcorp-mobile-hero-container">
+        <img class="salcorp-mobile-hero" src="assets/img/christin-hume-hBuwVLcYTnA-unsplash.jpg" alt="mobile hero">
+        <img class="salcorp-mobile-hero" src="assets/img/kevin-bhagat-zNRITe8NPqY-unsplash.jpg" alt="mobile hero">
+      </div>
+
+      <!--<section class="salcorp-positions">--->
+        <section class="salcorp-positions-container">
+          <div class="salcorp-position-indiv salcorp-position-indiv-1">
+            <img src="assets/img/HepburnLogo200x108.jpg" alt="Hepburn Shire Logo">
+            <div>
+              <h3>Manager Planning and Building</h3>
+              <p>Balancing beauty, environment, growth and tourism. Just over an hour from Melbourne, this role offers and attractive and dynamic mix</p>
+            </div>
+          </div>
+          <div class="salcorp-position-indiv salcorp-position-indiv-2">
+            <img src="assets/img/City-of-Whittlsea-logo-200x66.jpg" alt="City of Whittlesea Logo">
+            <div>
+              <h3>Director Connected Communities</h3>
+              <p>A challenging and rewarding opportunity in this diverse and cutural LG front runner. You will be working with an energetic executive team and cohesive Council.</p>
+            </div>
+          </div>
+          <div class="salcorp-position-indiv salcorp-position-indiv-3">
+            <img src="assets/img/City-of-Ballarat-Logo-200x65.png" alt="City of Ballarat Logo">
+            <div>
+              <h3>Manager Finance</h3>
+              <p>Innovate, collaborate, engage, excellerate! Join the senior leadership team under the recently appointed executive. An opportunity for dynamic and contemporary leaders to make some important contributions</p>
+            </div>
+        </section>
+     </section>  
+
+    <!-- SEARCH POSITIONS -->
+     <Section class="salcorp-available-positions-search">
+      <h2> Available Positions</h2>
+        <div>
+          <form >
+          <input class="salcorp-search" id ="searchbar" onkeyup="search_position()" searchtype="text" name="search" placeholder="Search available positions">
+          </form>
+        </div>
+      <ul class="positions-list" id='list'>
+        <li class="position">Manager Libraries - Moorabool Shire Council</li>
+        <li class="position">Director Corporate Services - Brimbank Council</li>
+        <li class="position">Manager Arts and Culture - City of Kingston</li>
+        <li class="position">Human Resources Manager - Buloke Shire Council</li>
+        <li class="position">Coordinator Statutory Planning</li>
+        <li class="position">Administration Officer - Hepburn Shire Council</li>
+        <li class="position">Coordinator Major Projects - City of Bendigo</li>
+        <li class="position">Manager Customer Services - City of Moonee Valley</li>
+      </ul>
+    </Section>
+   
+    <!--Salcorp 1-2-3-->
+    <section class="salcorp-123-container">
+      <h2 class="salcorp-123-container-title">We’re the experts in helping you find the right person to join your team</h2>
+      <div class="salcorp-123-item-container">
+        <div class="salcorp-123-item">
+          <img src="assets/img/watchglass.png" alt="search">
+          <div>
+            <h3>Search</h3>
+            <p>Read reviews to see how we can best help you.</p>
+          </div>
+        </div>
+        <div class="salcorp-123-item">
+          <img src="assets/img/phone.png" alt="phone">
+          <div>
+            <h3>See our competitive packages</h3>
+            <p>Find a package to suit your budget.</p>
+          </div>
+        </div>
+        <div class="salcorp-123-item">
+          <img src="assets/img/shield.png" alt="shield">
+          <div>
+            <h3>Relax</h3>
+            <p>Get the Sal Corp Guarantee, support, and placement solutions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="salcorp-call-to-action">   
+        <div class="salcorp-button-bottom"><a href="mailto:applications@salcorp-hr.com">Apply Now</a>
+        </div>
+        <div class="salcorp-button-bottom"><a href="https//www.linkedin.com/in/christine-mileham/">Connect on LinkedIn</a></div>
+    </section> 
+
+    <footer class="salcorp-footer">
+      <hr>
+      <p>Sal Corp Pty Ltd</p>
+    </footer>
+
+  </main>
+  <script defer src="final-project-v3.js"></script>
+</body>
+
+</html>
