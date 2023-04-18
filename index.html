@@ -25,18 +25,15 @@
         <a class="salcorp-header-link" href="#">Enployer Sign In </a>
         <a class="salcorp-header-link" href="#">Applicant Sign In</a>
         <a class="salcorp-header-link" href="#">Contact Us</a>
-        <!-- <div class="hamburger-menu" id="menu-trigger">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="Hamburger icon">
-        </div> -->
       </section>
       <section class="salcorp-header-right-mobile hamburger-menu" id="menu-trigger">
         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/hamburger.svg" alt="hamburger-icon">
       </section>
     </header>
 
-    <!-- side menu in here-->
+    <!-- side menu for responsive/mobile - burger menu - linked to JS-->
    
-      <aside class="side-menu-position side-menu-design show-menu" id="side-menu">
+      <aside class="side-menu-position side-menu-design " id="side-menu">
       <header class="side-menu-header">
          <img class="salcorp-header-image " src="https://www.salcorp-hr.com.au/wp-content/uploads/2019/01/salcorp-logo-transparent.png" alt="Sal Corp logo">
           <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/x.svg" alt="Close this menu" id="menu-close">
@@ -50,32 +47,17 @@
         </ul>
     </aside>
   
-
     <!--Hero Container-->
-    <section class="salcorp-hero-container image-mask-darken">
-      <!--<h1 class="salcorp-header-bar">Recruitment, Investigations, Workplace Relations and HRM Where quality and independence Counts!</h1>-->
+    <section class="salcorp-hero-container">
+      
       <h1 class="salcorp-hero-title">Recruitment, Investigations, Workplace Relations and HRM Consultants</h1>
       <p>Executive Recruitment that is responsive and adaptive!</p>
        
-      <!-- BUTTONS - DELETE?? -->
-      <div class="salcorp-button salcorp-cta">Search Available Positions</div>
-      <div class="salcorp-button salcorp-cta-mobile">Search Positions</div>
-       
-    <!-- link JS here to SEARCH BUTTON -->
-      <!-- <form action="" id="searchForm">
-        <label for="search"></label>
-        <label type="text" id="search" name="search"></label>
-      </form>
-      
-      from d17 omdb exercise 
-      <form class="position-search" id="searchForm">
-        <input class="search-term" name="search-term" type="text" placeholder="Search for a movie">
-       
-      </form> -->
-  
+      <!-- BUTTONS - JS scroll links to search -->
+      <div class="salcorp-button salcorp-cta" id="salcorp-positions-search">Search Available Positions</div>
+      <div class="salcorp-button salcorp-cta-mobile" id="mobile-pos-search">Search Positions</div>
     </section>
-    <!-- SEARCH FUNCTION - FOR JS -->
-    
+        
 
     <!-- Positions Container-->
     <section class="salcorp-middle-section">
@@ -110,23 +92,29 @@
         </section>
      </section>  
 
-    <!-- SEARCH POSITIONS -->
-     <Section class="salcorp-available-positions-search">
-      <h2> Available Positions</h2>
+    <!-- SEARCH POSITIONS - JS links to here for search function -->
+     <Section class="salcorp-available-positions-search" id="search-section">
+      <h2 id="search-section-mobile"> Available Positions</h2>
         <div>
           <form >
           <input class="salcorp-search" id ="searchbar" onkeyup="search_position()" searchtype="text" name="search" placeholder="Search available positions">
           </form>
         </div>
+          <style>
+            ul {
+              list-style-image: url("assets/img/Arrow-Icon-for-Web-Design-Clipart-PNG-20x20.png");
+            }
+          </style>
+
       <ul class="positions-list" id='list'>
         <li class="position">Manager Libraries - Moorabool Shire Council</li>
         <li class="position">Director Corporate Services - Brimbank Council</li>
         <li class="position">Manager Arts and Culture - City of Kingston</li>
-        <li class="position">Human Resources Manager - Buloke Shire Council</li>
-        <li class="position">Coordinator Statutory Planning</li>
+        <li class="position">Human Resources Manager - Buloke Shire</li>
+        <li class="position">Coordinator Statutory Planning - Buloke Shire</li>
         <li class="position">Administration Officer - Hepburn Shire Council</li>
         <li class="position">Coordinator Major Projects - City of Bendigo</li>
-        <li class="position">Manager Customer Services - City of Moonee Valley</li>
+        <li class="position">Manager Roads - Moonee Valley Council</li>
       </ul>
     </Section>
    

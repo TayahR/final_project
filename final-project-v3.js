@@ -32,6 +32,20 @@ document.getElementById('menu-trigger').addEventListener('click', sideMenuAppear
 document.getElementById('menu-close').addEventListener('click', sideMenuDisappears);
 
 
+//scrollToAvailPos() SCROLL to Available 
 
 
-console.log("here")
+document.getElementById('salcorp-positions-search').addEventListener('click', scrolls)
+
+function scrolls() {
+    document.getElementById('search-section').scrollIntoView({behavior: 'smooth'})
+}
+console.log(window.innerWidth)
+//mobile 
+const mob = document.querySelector('#mobile-pos-search').addEventListener('click', scrolls)
+
+// function scrollsMob() {
+//     document.getElementById
+//     ('search-section-mobile').scrollIntoView({behavior: 'smooth'})
+// }
+
