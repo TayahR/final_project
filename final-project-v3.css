@@ -44,13 +44,12 @@ p {
   display: block;
 }
 
-.salcorp-header-container a,
-.salcorp-header-container a:hover,
-.salcorp-header-container a:active,
-.salcorp-header-container a:visited {
-  color: #66727c;
-  text-decoration: none;
+.salcorp-header-container a {
+  color: #482683;
+  text-decoration:none;
 }
+
+a.salcorp-header-link:hover, a.salcorp-header-link:active {color: #4AABBC}
 
 .salcorp-header-image {
   height: 55px;
