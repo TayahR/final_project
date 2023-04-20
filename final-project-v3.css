@@ -222,6 +222,7 @@ a.salcorp-header-link:hover, a.salcorp-header-link:active {color: #4AABBC}
   display: flex;
   align-items: center;
   background-color: #fff;
+  padding: 10px;
 }
 
 .salcorp-position-indiv img {
